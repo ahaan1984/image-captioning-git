@@ -1,5 +1,11 @@
 import gradio as gr
+import torch
+from transformers import AutoProcessor, AutoModelForCausalLM
 from PIL import Image
+
+saved_folder_path = 'saved_model'
+
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 processor = AutoProcessor.from_pretrained(saved_folder_path)
 model = AutoModelForCausalLM.from_pretrained(saved_folder_path)
