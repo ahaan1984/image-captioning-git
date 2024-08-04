@@ -1,0 +1,10 @@
+pandas
+torch
+matplotlib
+tqdm
+transformers
+albumentations
+pillow
+peft
+wandb
+gradio
